@@ -1,0 +1,234 @@
+[
+  {
+    "id": "EGG001",
+    "name": "Organic Eggs (dozen)",
+    "aliases": [
+      "eggs",
+      "egg dozen",
+      "12 eggs",
+      "organic eggs"
+    ],
+    "unit": "dozen",
+    "currency": "USD",
+    "unit_price": 5.49,
+    "stock_qty": 6
+  },
+  {
+    "id": "BRD001",
+    "name": "Sourdough Bread Loaf",
+    "aliases": [
+      "sourdough bread",
+      "sourdough loaf",
+      "bread",
+      "sourdough"
+    ],
+    "unit": "loaf",
+    "currency": "USD",
+    "unit_price": 4.99,
+    "stock_qty": 12
+  },
+  {
+    "id": "FRT001",
+    "name": "Organic Bananas",
+    "aliases": [
+      "bananas",
+      "banana",
+      "organic bananas"
+    ],
+    "unit": "kg",
+    "currency": "USD",
+    "unit_price": 2.49,
+    "stock_qty": 25
+  },
+  {
+    "id": "FRT002",
+    "name": "Fresh Avocado",
+    "aliases": [
+      "avocado",
+      "avocados",
+      "fresh avocado"
+    ],
+    "unit": "piece",
+    "currency": "USD",
+    "unit_price": 1.99,
+    "stock_qty": 8
+  },
+  {
+    "id": "FRT003",
+    "name": "Gala Apples",
+    "aliases": [
+      "apples",
+      "apple",
+      "gala apples",
+      "red apples"
+    ],
+    "unit": "kg",
+    "currency": "USD",
+    "unit_price": 3.99,
+    "stock_qty": 15
+  },
+  {
+    "id": "MLK001",
+    "name": "Almond Milk (1L carton)",
+    "aliases": [
+      "almond milk",
+      "almond milk carton",
+      "milk almond"
+    ],
+    "unit": "carton",
+    "currency": "USD",
+    "unit_price": 3.79,
+    "stock_qty": 10
+  },
+  {
+    "id": "CHE001",
+    "name": "Cheddar Cheese Block (250g)",
+    "aliases": [
+      "cheddar cheese",
+      "cheddar",
+      "cheese cheddar",
+      "cheddar block"
+    ],
+    "unit": "pack",
+    "currency": "USD",
+    "unit_price": 4.29,
+    "stock_qty": 7
+  },
+  {
+    "id": "YOG001",
+    "name": "Greek Yogurt (500g)",
+    "aliases": [
+      "greek yogurt",
+      "greek yoghurt",
+      "yogurt greek",
+      "yoghurt"
+    ],
+    "unit": "container",
+    "currency": "USD",
+    "unit_price": 5.99,
+    "stock_qty": 0
+  },
+  {
+    "id": "JUI001",
+    "name": "Orange Juice (1L)",
+    "aliases": [
+      "orange juice",
+      "juice orange",
+      "oj",
+      "juice"
+    ],
+    "unit": "bottle",
+    "currency": "USD",
+    "unit_price": 4.49,
+    "stock_qty": 14
+  },
+  {
+    "id": "VEG001",
+    "name": "Fresh Tomatoes",
+    "aliases": [
+      "tomatoes",
+      "tomato",
+      "fresh tomatoes"
+    ],
+    "unit": "kg",
+    "currency": "USD",
+    "unit_price": 3.29,
+    "stock_qty": 18
+  },
+  {
+    "id": "VEG002",
+    "name": "Organic Carrots",
+    "aliases": [
+      "carrots",
+      "carrot",
+      "organic carrots"
+    ],
+    "unit": "kg",
+    "currency": "USD",
+    "unit_price": 2.19,
+    "stock_qty": 20
+  },
+  {
+    "id": "MLK002",
+    "name": "Whole Milk (1L)",
+    "aliases": [
+      "whole milk",
+      "milk",
+      "regular milk"
+    ],
+    "unit": "bottle",
+    "currency": "USD",
+    "unit_price": 2.99,
+    "stock_qty": 15
+  },
+  {
+    "id": "VEG003",
+    "name": "Fresh Spinach",
+    "aliases": [
+      "spinach",
+      "fresh spinach",
+      "spinach leaves"
+    ],
+    "unit": "bunch",
+    "currency": "USD",
+    "unit_price": 2.89,
+    "stock_qty": 4
+  },
+  {
+    "id": "GRN001",
+    "name": "Brown Rice (1kg bag)",
+    "aliases": [
+      "brown rice",
+      "rice brown",
+      "rice",
+      "wholegrain rice"
+    ],
+    "unit": "bag",
+    "currency": "USD",
+    "unit_price": 6.49,
+    "stock_qty": 8
+  },
+  {
+    "id": "MET001",
+    "name": "Chicken Breast (500g)",
+    "aliases": [
+      "chicken breast",
+      "chicken",
+      "chicken breasts",
+      "fresh chicken"
+    ],
+    "unit": "pack",
+    "currency": "USD",
+    "unit_price": 7.99,
+    "stock_qty": 0
+  },
+  {
+    "id": "PAS001",
+    "name": "Penne Pasta (500g)",
+    "aliases": [
+      "pasta",
+      "penne pasta",
+      "penne",
+      "pasta penne"
+    ],
+    "unit": "pack",
+    "currency": "USD",
+    "unit_price": 2.49,
+    "stock_qty": 20
+  },
+  {
+    "id": "OIL001",
+    "name": "Extra Virgin Olive Oil (500ml)",
+    "aliases": [
+      "olive oil",
+      "extra virgin olive oil",
+      "evoo",
+      "cooking oil"
+    ],
+    "unit": "bottle",
+    "currency": "USD",
+    "unit_price": 9.99,
+    "stock_qty": 3
+  }
+]
+

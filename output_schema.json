@@ -1,0 +1,127 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SmartOrderSummary",
+  "type": "object",
+  "required": [
+    "customer_order",
+    "resolved_items",
+    "totals"
+  ],
+  "properties": {
+    "customer_order": {
+      "type": "string",
+      "description": "Original free-text order from the customer"
+    },
+    "resolved_items": {
+      "type": "array",
+      "description": "List of items parsed from the order with matching and pricing details",
+      "items": {
+        "type": "object",
+        "required": [
+          "requested",
+          "matched_item",
+          "quantity",
+          "unit",
+          "unit_price",
+          "currency",
+          "status",
+          "line_total"
+        ],
+        "properties": {
+          "requested": {
+            "type": "string",
+            "description": "Raw parsed item phrase from customer order"
+          },
+          "matched_item": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Catalog item name if matched, null if not found"
+          },
+          "item_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Catalog item ID if matched"
+          },
+          "quantity": {
+            "type": "number",
+            "description": "Quantity normalized to the item's unit of measurement"
+          },
+          "unit": {
+            "type": "string",
+            "description": "Unit of measurement (kg, dozen, piece, bottle, etc.)"
+          },
+          "unit_price": {
+            "type": "number",
+            "description": "Price per unit"
+          },
+          "currency": {
+            "type": "string",
+            "description": "Currency code (e.g., USD)"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "available",
+              "out_of_stock",
+              "not_found",
+              "partial"
+            ],
+            "description": "Availability status of the item"
+          },
+          "notes": {
+            "type": "string",
+            "description": "Additional notes about the item (e.g., only X available)"
+          },
+          "line_total": {
+            "type": "number",
+            "description": "Total price for this line item (quantity * unit_price)"
+          }
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "description": "Order total calculations",
+      "required": [
+        "subtotal",
+        "tax",
+        "grand_total",
+        "currency"
+      ],
+      "properties": {
+        "subtotal": {
+          "type": "number",
+          "description": "Sum of all line_total values"
+        },
+        "tax_rate": {
+          "type": "number",
+          "description": "Applied tax rate (e.g., 0.1 for 10%)"
+        },
+        "tax": {
+          "type": "number",
+          "description": "Calculated tax amount"
+        },
+        "grand_total": {
+          "type": "number",
+          "description": "Final total including tax (subtotal + tax)"
+        },
+        "currency": {
+          "type": "string",
+          "description": "Currency code for all amounts"
+        }
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "List of phrases or items the agent could not map to catalog items"
+    }
+  }
+}
+
