@@ -25,19 +25,17 @@ An AI-powered agent built with **LangGraph** and **LangChain** that processes fr
    ```bash
     pip install -r requirements.txt
 
-**Running the Project**
-To process the test orders and see the output:
-```bash
-python test_run.py
+## Running the Project:
+   ```bash
+   To process the test orders and see the output:
+   python test_run.py
 
-**Docker Support**
+Docker Support
 If you have Docker installed, you can run the agent in a containerized environment:
 
-1. **Build the Docker image**:
-   ```bash
+1. Build the Docker image:
    docker build -t grocery-agent .
 
-2. **Run the container**:
+2. Run the container:
     (This will use the API key from your local .env file)
-   ```bash
     docker run --env-file .env grocery-agent
