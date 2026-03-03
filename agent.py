@@ -68,7 +68,6 @@ def process_order(customer_order: str) -> Dict[str, Any]:
         return final_output
 
     except Exception as e:
-        # Error Handling
         logger.error(f"Error processing order: {str(e)}")
 
         return {

@@ -8,6 +8,8 @@ An AI-powered agent built with **LangGraph** and **LangChain** that processes fr
 * **Stock Management**: Handles out-of-stock items and partial fulfillment (ORD08 logic).
 * **Automated Calculations**: Calculates subtotals, 10% tax, and grand totals.
 * **Code Quality**: Formatted with `black` and `isort`.
+* **Conditional Workflow Routing**: Implemented smart termination logic in the graph to handle failed extractions efficiently.
+* **Production-Ready Error Handling**: Graceful degradation and logging for robustness against API failures.
 
 ## Setup & Installation
 

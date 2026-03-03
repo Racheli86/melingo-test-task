@@ -68,11 +68,9 @@ def get_item(query: str) -> Optional[Dict[str, Any]]:
     query_lower = query.lower().strip()
 
     for item in stock:
-        # Check if query matches the item name
         if query_lower in item["name"].lower():
             return item
 
-        # Check if query matches any alias
         for alias in item["aliases"]:
             if query_lower in alias.lower() or alias.lower() in query_lower:
                 return item
@@ -105,12 +103,10 @@ def search_items(query: str) -> List[Dict[str, Any]]:
     matches = []
 
     for item in stock:
-        # Check if query matches the item name
         if query_lower in item["name"].lower():
             matches.append(item)
             continue
 
-        # Check if query matches any alias
         for alias in item["aliases"]:
             if query_lower in alias.lower() or alias.lower() in query_lower:
                 matches.append(item)
@@ -145,7 +141,6 @@ def check_availability(item_id: str, requested_qty: float) -> Dict[str, Any]:
     """
     stock = get_stock()
 
-    # Find the item
     item = None
     for stock_item in stock:
         if stock_item["id"] == item_id:
