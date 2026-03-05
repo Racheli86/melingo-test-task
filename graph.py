@@ -4,7 +4,7 @@ from nodes import calculation_node, extraction_node, fulfillment_node
 from state import AgentState
 
 def should_continue(state: AgentState):
-    if not state.get("extracted_items"):
+    if not state.get("resolved_items"):
         return "end"
     return "continue"
 
